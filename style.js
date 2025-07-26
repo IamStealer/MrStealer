@@ -1,6 +1,4 @@
-// Mr Stealer Start
-        /* <![CDATA[ */
-        document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', () => {
             const popupOverlay = document.getElementById('welcomePopupOverlay');
             const popupMessageElement = document.getElementById('popupMessage');
             const closeButton = document.getElementById('closePopupButton');
@@ -43,5 +41,3 @@
                 }
             });
         });
-        /* ]]> */
-        // Mr Stealer Ended
