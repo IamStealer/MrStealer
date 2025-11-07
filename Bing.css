@@ -1,0 +1,32 @@
+      @import url(&#39;https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&amp;display=swap&#39;);
+      .aurora-bg {position:fixed;top:0;left:0;width:100%;height:100%;z-index:-2;background:linear-gradient(135deg,#0f0c29,#302b63,#24243e);overflow:hidden;}
+      .aurora-bg::before {content:&#39;&#39;;position:absolute;top:0;left:0;width:200%;height:200%;background:radial-gradient(circle,rgba(0,255,100,0.3)0%,transparent 70%);animation:aurora 15s infinite linear;}
+      @keyframes aurora {0%{transform:translate(0,0) rotate(0deg);}100%{transform:translate(-50%,-50%) rotate(360deg);}}
+      .particles {position:absolute;width:100%;height:100%;z-index:-1;}
+      .particle {position:absolute;background:#00ff41;border-radius:50%;opacity:0;animation:float 6s infinite;}
+      @keyframes float {0%,100%{transform:translateY(0) scale(0);opacity:0;}50%{opacity:0.8;transform:translateY(-100px) scale(1);}}
+      .prism-card {max-width:680px;margin:40px auto;padding:30px;position:relative;background:rgba(15,15,35,0.7);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border:1px solid rgba(0,255,65,0.3);border-radius:20px;box-shadow:0 20px 40px rgba(0,0,0,0.5),0 0 30px rgba(0,255,65,0.4);font-family:&#39;Orbitron&#39;,monospace;color:#00ff41;overflow:hidden;animation:cardFade 1.5s ease-out;}
+      @keyframes cardFade {from{opacity:0;transform:translateY(30px) scale(0.95);}to{opacity:1;transform:translateY(0) scale(1);}}
+      .prism-card:hover {transform:translateY(-8px) rotateX(5deg);box-shadow:0 30px 60px rgba(0,0,0,0.6),0 0 50px rgba(0,255,65,0.6);}
+      .prism-title {text-align:center;font-size:1.8rem;margin:0 0 25px;text-shadow:0 0 15px #00ff41;letter-spacing:2px;}
+      .prism-sec {margin:18px 0;display:flex;align-items:center;flex-wrap:wrap;}
+      .prism-sec label {width:170px;font-weight:bold;text-shadow:0 0 8px;}
+      .prism-sec input,.prism-sec select,.prism-sec textarea {flex:1;min-width:200px;background:rgba(10,10,30,0.8);color:#00ff41;border:1px solid #00ff41;padding:12px;border-radius:10px;font-family:&#39;Orbitron&#39;;transition:all 0.3s;box-shadow:0 0 15px rgba(0,255,65,0.2);}
+      .prism-sec input:focus,.prism-sec select:focus,.prism-sec textarea:focus {outline:none;border-color:#50ff84;box-shadow:0 0 25px #00ff41;}
+      .prism-btn {background:linear-gradient(45deg,#00ff41,#50ff84,#00ff41);color:#000;border:none;padding:16px;font-weight:bold;font-size:1.1rem;cursor:pointer;width:100%;margin:25px 0 15px;border-radius:12px;position:relative;overflow:hidden;box-shadow:0 8px 20px rgba(0,255,65,0.5);transition:all 0.4s;text-transform:uppercase;letter-spacing:1px;}
+      .prism-btn::before {content:&#39;&#39;;position:absolute;top:0;left:-100%;width:100%;height:100%;background:linear-gradient(90deg,transparent,rgba(255,255,255,0.3),transparent);transition:0.7s;}
+      .prism-btn:hover::before {left:100%;}
+      .prism-btn:hover {transform:translateY(-3px);box-shadow:0 12px 30px rgba(0,255,65,0.7);}
+      .prism-btn:disabled {opacity:0.7;cursor:not-allowed;}
+      .prism-progress {height:28px;background:rgba(10,10,30,0.8);margin:20px 0;border-radius:14px;overflow:hidden;border:1px solid #00ff41;position:relative;}
+      .prism-bar {height:100%;width:0%;background:linear-gradient(90deg,#00ff41,#50ff84);border-radius:14px;transition:width 0.5s ease;box-shadow:0 0 20px #00ff41;}
+      .prism-ptxt {position:absolute;top:0;left:0;width:100%;text-align:center;line-height:28px;font-weight:bold;color:#000;text-shadow:0 0 5px #fff;}
+      .prism-status {text-align:center;font-style:italic;margin:12px 0;color:#50ff84;text-shadow:0 0 8px;}
+      .prism-result {margin-top:25px;display:none;border:1px solid #00ff41;border-radius:12px;overflow:hidden;}
+      .prism-result textarea {width:100%;height:240px;background:#0a0a1a;color:#0f0;border:none;padding:15px;font-family:&#39;Consolas&#39;;resize:none;}
+      .copy-btn {float:right;background:#00ff41;color:#000;border:none;padding:8px 16px;border-radius:8px;cursor:pointer;margin:8px;font-weight:bold;}
+      .copy-btn:hover {background:#50ff84;}
+      .drag-area {border:2px dashed #00ff41;border-radius:12px;padding:25px;text-align:center;margin:20px 0;cursor:pointer;transition:0.3s;font-weight:bold;}
+      .drag-area.dragover {background:rgba(0,255,65,0.15);border-color:#50ff84;}
+      .prism-footer {display:flex;justify-content:space-between;font-size:0.8rem;margin-top:25px;color:#00ff41;text-shadow:0 0 5px;}
+      .download-log {margin-top:15px;padding:10px;background:rgba(0,255,65,0.1);border-radius:8px;font-size:0.9rem;max-height:120px;overflow-y:auto;}
